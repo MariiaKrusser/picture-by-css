@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.cat-house {
+    background: #FFCA95;
+    height: 100%;
+}
+
+.ear {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 25px solid #475881;
+}
+
+.ears {
+    display: flex;
+    flex-direction: row;
+    padding-left: 33px;
+
+}
+
+.head {
+    background: #7C85AB;
+    border-radius: 40px;
+    width: 150px;
+    height: 80px;
+    box-shadow: -10px 0 0 #475881;
+}
+
+.body {
+    background: #7C85AB;
+    width: 300px;
+    height: 160px;
+}
+
+.cat {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
