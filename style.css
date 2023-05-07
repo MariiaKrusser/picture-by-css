@@ -17,34 +17,117 @@ html {
 .ear {
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 25px solid #475881;
+    border-left: 12px solid transparent;
+    border-right: 21px solid transparent;
+    border-bottom: 27px solid #475881;
 }
 
 .ears {
     display: flex;
     flex-direction: row;
-    padding-left: 33px;
-
+    margin-right: 40px;
 }
 
 .head {
     background: #7C85AB;
     border-radius: 40px;
-    width: 150px;
+    width: 140px;
     height: 80px;
     box-shadow: -10px 0 0 #475881;
+    margin-bottom: -40px;
+    z-index: 2;
 }
 
 .body {
     background: #7C85AB;
-    width: 300px;
-    height: 160px;
+    width: 225px;
+    height: 130px;
+    border-radius: 100px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
 
 .cat {
+    width: 300px;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.eyes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: -15px;
+}
+
+
+.eye {
+    background: black;
+    width: 11px;
+    height: 11px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.nose {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: -15px;
+}
+
+.nosy {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid pink;
+    margin-right: -10px;
+    z-index: 1;
+}
+
+.cheeks {
+    background: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.cheeks:first-child {
+    margin-right: -8px;
+}
+
+.cheeks:last-child {
+    margin-right: -7px;
+}
+
+.taile {
+    background: #475881;
+    height: 25px;
+    width: 150px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+    z-index: 0;
+}
+
+.paws {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.paw {
+    background: white;
+    width: 40px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 15px 5px;
 }
