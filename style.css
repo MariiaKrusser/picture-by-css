@@ -131,3 +131,28 @@ html {
     border-radius: 30px;
     margin: 15px 5px;
 }
+
+.keyboard-length {
+    background: #475881;
+    height: 12px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.keyboard-width {
+    background: #16223f;
+    height: 12px;
+    width: 75px;
+    border-radius: 20px;
+}
+
+.screen {
+    background: #16223f;
+    height: 80px;
+    width: 125px;
+	-webkit-transform: skew(344deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+    border-radius: 5px;
+
+}
