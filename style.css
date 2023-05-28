@@ -12,6 +12,7 @@ html {
 .cat-house {
     background: #FFCA95;
     height: 100%;
+    display: flex;
 }
 
 .ear {
@@ -116,6 +117,7 @@ html {
     bottom: 30px;
     left: 75px;
     z-index: 0;
+    top: 202px;
 }
 
 .paws {
@@ -149,10 +151,41 @@ html {
 .screen {
     background: #16223f;
     height: 80px;
-    width: 125px;
+    width: 130px;
 	-webkit-transform: skew(344deg);
 	-moz-transform: skew(20deg);
 	-o-transform: skew(20deg);
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.laptop {
+    margin-top: 135px;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+.logo-left {
+    background: #475881;
+    height: 20px;
+    width: 12px;
+    -webkit-transform: skew(355deg);
+    border-radius: 7px;
+    margin-right: 2px;
+}
+
+.logo-right {
+    background: #475881;
+    height: 20px;
+    width: 12px;
+    -webkit-transform: skew(355deg);
+    border-radius: 7px;
+    margin-left: 2px;
+}
+
+.logo {
+    display: flex;
 }
