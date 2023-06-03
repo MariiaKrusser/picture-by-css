@@ -13,6 +13,8 @@ html {
     background: #FFCA95;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ear {
@@ -65,6 +67,31 @@ html {
     margin-top: 40px;
     justify-content: center;
     margin-right: -15px;
+    animation: 10s eyes infinite;
+}
+
+@keyframes eyes {
+    50% {
+        transform: translateX(0);
+    }
+    55% {
+        transform: translateX(3px);
+    }
+    60% {
+        transform: translateX(-3px);
+    }
+    70% {
+        transform: translateX(3px);
+    }
+    80% {
+        transform: translateX(-3px);
+    }
+    90% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 
@@ -163,7 +190,7 @@ html {
 }
 
 .laptop {
-    margin-top: 135px;
+    margin-top: 105px;
     margin-left: -150px;
     z-index: 2;
 }
@@ -189,3 +216,112 @@ html {
 .logo {
     display: flex;
 }
+
+.paw-left {
+    animation: 10s paw-left infinite;
+}
+
+@keyframes paw-left {
+    2% {
+        transform:translateY(-10px)
+    }
+    6% {
+        transform:translateY(0)
+    }
+    8% {
+        transform:translateY(-10px)
+    }
+    10% {
+        transform:translateY(0)
+    }
+    14% {
+        transform:translateY(-10px)
+    }
+    18% {
+        transform:translateY(0)
+    }
+    22% {
+        transform:translateY(-10px)
+    }
+    26% {
+        transform:translateY(0)
+    }
+}
+
+
+.paw-right {
+    animation: 10s paw-right infinite;
+}
+
+@keyframes paw-right {
+    6% {
+        transform:translateY(-10px)
+    }
+    8% {
+        transform:translateY(0)
+    }
+    10% {
+        transform:translateY(-10px)
+    }
+    12% {
+        transform:translateY(0)
+    }
+    16% {
+        transform:translateY(-10px)
+    }
+    20% {
+        transform:translateY(0)
+    }
+    24% {
+        transform:translateY(-10px)
+    }
+    28% {
+        transform:translateY(0)
+    }
+}
+
+.cat > .tail {
+    bottom: 0;
+    right: 35%;
+    border-radius: 50%/250%;
+    height: 25px;
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+    z-index: 0;
+    top: 202px;
+    background: linear-gradient(to left, #475881 58%, rgba(0,0,0,0) 40%);
+
+  }
+  
+  .cat .tail > .tail {
+    right: 56%;
+  }
+  
+  .tail > .tail {
+    height: 100%;
+    transform-origin: center right;
+    transform: rotate(0deg);
+    width: 30px;
+    right: 26%;
+    animation: tail 2s none infinite;
+    border-top-left-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    background-color: inherit;
+    position: absolute;
+    background: #475881;
+}
+  
+  @keyframes tail {
+    5% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    70%,
+    100% {
+      transform: rotate(0);
+    }
+  }
